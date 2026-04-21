@@ -35,12 +35,6 @@ public class MainActivity extends AppCompatActivity {
         
     private String n = "Hallo Dunia";
     private ActivityMainBinding binding;
-    private long l = 10;
-    private long i = 200;
-    private long s = 0;
-    private String k = "null";
-    private long p = 0;
-    private String m = "";
             
     @Override
     protected void onCreate(Bundle savedInstanceState) {
