@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:gravity="center_horizontal|center_vertical"
+         android:orientation="vertical"
+         android:id="@+id/linear1">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:padding="8dp"
+             android:orientation="horizontal"
+             android:id="@+id/linear2">
+
+            <ImageView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:src="@drawable/enhanced_encryption" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="8dp"
+                 android:textSize="29sp"
+                 android:id="@+id/textview2"
+                 android:text="TEXT TO AES"
+                 android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="8dp"
+             android:orientation="horizontal"
+             android:id="@+id/linear3">
+
+            <EditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:hint="Edit Text"
+                 android:padding="8dp"
+                 android:textSize="12sp"
+                 android:id="@+id/edittext1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="8dp"
+             android:orientation="horizontal"
+             android:id="@+id/linear4">
+
+            <EditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:hint="Edit Text"
+                 android:padding="8dp"
+                 android:textSize="12sp"
+                 android:id="@+id/edittext2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_horizontal|center_vertical"
+             android:padding="8dp"
+             android:orientation="horizontal"
+             android:id="@+id/linear5">
+
+            <Button
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="8dp"
+                 android:textSize="12sp"
+                 android:id="@+id/button1"
+                 android:text="Engkripsi" />
+
+            <Button
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:id="@+id/button2"
+                 android:text="Deskripsi" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_horizontal|center_vertical"
+             android:padding="8dp"
+             android:orientation="horizontal"
+             android:id="@+id/linear6">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="8dp"
+                 android:textSize="12sp"
+                 android:id="@+id/textview1"
+                 android:text="TextView"
+                 android:clickable="true"
+                 android:focusable="true"
+                 android:longClickable="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
