@@ -129,6 +129,24 @@ public class aescity extends AppCompatActivity {
         
         });
         
+        
+        long ki = 10;
+        long jo = 90;
+        esing aesTool = new esing();
+        
+        try {
+        long jejes = aesTool.long256(ki, jo);
+        String bubu = String.valueOf((long)(jejes));
+        String hargaString = "1250000";
+    
+    // Memanggil metode idtorrp
+        String hasilFormat = aesTool.idtorrp(hargaString);
+        
+        
+        Toast.makeText(this, hasilFormat, Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+        e.printStackTrace();
+        }
     }
     
     private void copyToClipboard(String text) {

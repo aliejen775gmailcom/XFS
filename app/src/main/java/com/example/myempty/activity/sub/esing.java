@@ -58,5 +58,31 @@ public class esing {
         
         
     }
+    
+    public static String idtorrp(String datas) {
+    // 1. Validasi input: Jika kosong atau null, kembalikan string kosong atau 0
+    if (datas == null || datas.isEmpty()) {
+        return "0";
+    }
+
+    try {
+        // 2. Ubah String menjadi Double (atau Long jika tidak ada desimal)
+        long angka = Long.parseLong(datas);
+
+        // 3. Atur format pemisah ribuan
+        java.text.DecimalFormat ds = new java.text.DecimalFormat("#,###");
+        java.text.DecimalFormatSymbols symbolsk = new java.text.DecimalFormatSymbols();
+        symbolsk.setGroupingSeparator(','); // Gunakan koma sebagai pemisah ribuan
+        ds.setDecimalFormatSymbols(symbolsk);
+
+        // 4. Format angka tersebut kembali menjadi String
+        return ds.format(angka);
+
+    } catch (NumberFormatException e) {
+        // Jika isi 'datas' bukan angka (misal: "abc"), kembalikan nilai asli atau pesan error
+        return "Invalid Input";
+    }
+    
+    }    
 
 }
