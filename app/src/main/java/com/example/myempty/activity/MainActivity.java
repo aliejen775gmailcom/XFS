@@ -28,6 +28,8 @@ import java.util.*;
 import java.util.regex.*;
 import org.json.*;
 import com.example.myempty.activity.databinding.ActivityMainBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemSelectedListener;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -61,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
 				System.exit(1);
 			}
 		});
+        
+        binding.bottomnavigation2.getMenu().add(0, 1, 0, "Rumah").setIcon(R.drawable.home);
+        binding.bottomnavigation2.getMenu().add(0, 2, 0, "Menu").setIcon(R.drawable.sharp_menu_open);
+        binding.bottomnavigation2.getMenu().add(0, 3, 0, "Lainnya").setIcon(R.drawable.sharp_insert_comment);
         
         
         

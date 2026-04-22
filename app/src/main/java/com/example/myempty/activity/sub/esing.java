@@ -20,7 +20,7 @@ public class esing {
     byte[] iv = new byte[16]; 
     IvParameterSpec ivSpec = new IvParameterSpec(iv);
 
-    Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
+    Cipher cipher = Cipher.getInstance(ALGORITHM);
     cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec, ivSpec);
 
     byte[] encrypted = cipher.doFinal(plainText.getBytes(StandardCharsets.UTF_8));
