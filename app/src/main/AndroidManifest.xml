@@ -27,6 +27,11 @@
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
 			android:hardwareAccelerated="true"
 			android:supportsPictureInPicture="true" />    
+        <activity
+    android:name="com.example.myempty.activity.Ikram.Inputdata"
+    android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+    android:hardwareAccelerated="true"
+    android:supportsPictureInPicture="true" />  
     </application>
     
 </manifest>

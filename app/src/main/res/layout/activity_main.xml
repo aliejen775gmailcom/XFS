@@ -30,37 +30,27 @@
                  android:id="@+id/linear4">
 
                 <LinearLayout
-                     android:layout_height="80dp"
-                     android:layout_width="80dp"
-                     android:gravity="center_horizontal|center_vertical"
-                     android:padding="8dp"
-                     android:orientation="vertical"
-                     android:id="@+id/linear7"
-                     android:background="@drawable/bg_rounded_white">
-
-                    <ImageView
-                         android:layout_height="wrap_content"
-                         android:layout_width="wrap_content"
-                         android:src="@drawable/ac_unit"
-                         android:scaleType="center"
-                         android:id="@+id/imageview1" />
-
-                </LinearLayout>
-
-                <LinearLayout
                      android:layout_height="wrap_content"
                      android:layout_width="200dp"
                      android:background="@drawable/bg_rounded_white"
                      android:gravity="center_vertical"
                      android:padding="8dp"
                      android:orientation="horizontal"
+                     android:layout_marginLeft="10dp"
                      android:id="@+id/linear6">
+
+                    <ImageView
+                         android:layout_height="40dp"
+                         android:layout_width="50dp"
+                         android:src="@drawable/ac_unit"
+                         android:scaleType="center"
+                         android:id="@+id/imageview1" />
 
                     <TextView
                          android:layout_height="wrap_content"
                          android:layout_width="wrap_content"
-                         android:padding="8dp"
                          android:textSize="20sp"
+                         android:layout_marginLeft="10dp"
                          android:id="@+id/textview1"
                          android:text="Halo Ikram."
                          android:textStyle="bold" />

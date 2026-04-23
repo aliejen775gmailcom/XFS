@@ -30,13 +30,17 @@ import org.json.*;
 import com.example.myempty.activity.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemSelectedListener;
-
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.app.Activity;
+import com.example.myempty.activity.Ikram.Inputdata;
 
 public class MainActivity extends AppCompatActivity {
     
         
     private String n = "Hallo Dunia";
     private ActivityMainBinding binding;
+    private Intent next = new Intent();
             
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +71,17 @@ public class MainActivity extends AppCompatActivity {
         binding.bottomnavigation2.getMenu().add(0, 1, 0, "Rumah").setIcon(R.drawable.home);
         binding.bottomnavigation2.getMenu().add(0, 2, 0, "Menu").setIcon(R.drawable.sharp_menu_open);
         binding.bottomnavigation2.getMenu().add(0, 3, 0, "Lainnya").setIcon(R.drawable.sharp_insert_comment);
+        
+        binding.materialbutton1.setOnClickListener(v -> {
+            
+            next.setClass(getApplicationContext(), Inputdata.class);
+			startActivity(next);
+            
+            
+            
+            
+            
+        });
         
         
         
