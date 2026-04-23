@@ -26,7 +26,7 @@ import java.io.*;
 import java.text.*;
 import java.util.*;
 import java.util.regex.*;
-import org.json.*;import com.example.myempty.activity.databinding.CustomerroractivityBinding;
+import org.json.*;import com.example.myempty.activity.databinding.CustomerroractivityBinding;
 
 
 public class custom_error extends AppCompatActivity {
@@ -53,15 +53,12 @@ public class custom_error extends AppCompatActivity {
         binding.textviewError.setText(sklm);
         
         // 2. Logika Tombol Restart (Gunakan ID yang ada di XML melalui binding)
-        binding.btnRestart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Pastikan nama class-nya benar: custom_error.this
-                Intent intent = new Intent(custom_error.this, MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
-                finish();
-            }
+        binding.btnRestart.setOnClickListener(v -> {
+            // Pastikan nama class-nya benar: custom_error.this
+            Intent intent = new Intent(custom_error.this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
         });
         
         // 3. Logika Tombol Lapor
